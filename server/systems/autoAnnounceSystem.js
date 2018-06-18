@@ -41,12 +41,12 @@ angular
                                 // Would be cool though to have links etc to twitter and our homepage
 
                                 [
-                                    'Welcome to Ironbane ' + IB_CONSTANTS.GAME_VERSION + '!',
+                                    'Welcome to NerdQuest ' + IB_CONSTANTS.GAME_VERSION + '!',
                                     'Server uptime: ' + IbUtils.timeSince($timing.startTime)
                                 ],
 
                                 [
-                                    'Note that Ironbane is in alpha stage.',
+                                    'Note that NerdQuest is in alpha stage.',
                                     'Please report all bugs on the forum.'
                                 ],
 
@@ -57,12 +57,12 @@ angular
                                 ],
 
                                 [
-                                    'Did you know Ironbane has a newsletter?',
+                                    'Did you know NerdQuest has a newsletter?',
                                     'Simply go to our homepage to sign up.'
                                 ],
 
                                 [
-                                    'Follow us on Twitter! @IronbaneMMO'
+                                    'Follow us on Twitter! @NerdQuestMMO'
                                 ],
 
                                 // Not sure if we should still add IRC
