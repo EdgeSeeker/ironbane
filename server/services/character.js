@@ -148,7 +148,7 @@ angular
                             'Potion 100%',
                             'Potion 100%',
                         ], [
-                            'Club',
+                            'Dull Sword',
                             'Peasant Shirt',
                             'Dirty Dishcloth Bandana',
                             'Old Shoes'
