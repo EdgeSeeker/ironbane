@@ -85,7 +85,7 @@ angular
             var contentFile = (Meteor.settings.content && Meteor.settings.content.items) ? Meteor.settings.content.items :
                 (IB_CONSTANTS.isDev ? 'https://docs.google.com/spreadsheets/d/1ZC-ydW7if6Ci0TytsSLaio0LMoCntQwaUkXAOwjn7Y8/pub?output=csv' : 'items.csv');
 
-            console.log('Loading items from spreadsheet');
+            console.log('Loading items from spreadsheet...');
 
             loadData(contentFile).then(Meteor.bindEnvironment(function(data) {
                 var headers, rows;
