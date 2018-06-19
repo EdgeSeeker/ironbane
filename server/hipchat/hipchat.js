@@ -24,7 +24,7 @@ angular
                 if (room) {
                     var params = {
                         room: room.room_id,
-                        from: 'Ironbot',
+                        from: 'NQbot',
                         message: msg,
                         color: 'green'
                     };

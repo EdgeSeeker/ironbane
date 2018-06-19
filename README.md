@@ -1,6 +1,6 @@
 # NerdQuest MMO
 
-An open source 3D action MMO written in Javascript.
+An MMO about a Nerd's daily life: Finding princesses in castles, friendly treasure hunts, slaying code dragons, squashing bugs and getting code to compile.
 
 ## Installing and running
 

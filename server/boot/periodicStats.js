@@ -47,18 +47,18 @@ angular
 
             var message = messages.join(' | ');
             console.log(message);
-            HipChat.postMessage('Ironbane Chillout', message);
+            HipChat.postMessage('NerdQuest Chillout', message);
         }
 
         function notifyAlexaRank () {
             var reportSite = function (site) {
                 alexa(site, function(error, result) {
                     var message = 'Alexa rank for ' + site + ': #' + result.rank;
-                    HipChat.postMessage('Ironbane Chillout', message);
+                    HipChat.postMessage('NerdQuest Chillout', message);
                     console.log(message);
                 });
             };
-            reportSite('ironbane.com');
+            reportSite('nerdquest.com');
         }
 
         Meteor.methods({
@@ -74,7 +74,7 @@ angular
 
         if (!IB_CONSTANTS.isDev) {
             Meteor.setTimeout(function() {
-                HipChat.postMessage('Ironbane Chillout', Meteor.settings.server.name + ' server (' + Meteor.settings.server.id + ') started!');
+                HipChat.postMessage('NerdQuest Chillout', Meteor.settings.server.name + ' server (' + Meteor.settings.server.id + ') started!');
             }, 5 * 1000);
 
             if (Meteor.settings.doPeriodicStats) {
@@ -82,7 +82,7 @@ angular
                 Meteor.setInterval(notifyAlexaRank, 3600 * 24 * 1000);
             }
         }
-        else if (process.env.VIRTUAL_HOST === 'dev.alabaster.ironbane.com') {
+        else if (process.env.VIRTUAL_HOST === 'nerdquest.nerdhosting.dk') {
             Meteor.setTimeout(function() {
                 HipChat.postMessage('Code', 'Dev server started!');
                 HipChat.postMessage('Levels', 'Dev server started!');

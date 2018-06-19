@@ -10,7 +10,7 @@ angular
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', IB_CONSTANTS.isDev ? 'UA-55502635-2' : 'UA-55502635-3', 'auto');
+          ga('create', IB_CONSTANTS.isDev ? 'UA-55' : 'UA-55', 'auto');
         };
 
         this.track = function () {

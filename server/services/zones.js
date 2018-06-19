@@ -40,7 +40,6 @@ angular
             var meteorBuildPublicPath = meteorBuildPath + '../web.browser/app/';
             var scenePath = meteorBuildPublicPath + 'scene';
 
-
             ContentLoader.load().then(Meteor.bindEnvironment(function () {
 
                 walk(scenePath, {
