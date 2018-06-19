@@ -29,7 +29,7 @@ angular
             },
             warnUser: function(charName, warningLevel, message) {
                 if (!Roles.userIsInRole(this.userId, ['game-master', 'admin'])) {
-                    throw new Meteor.Error('insufficient privledges');
+                    throw new Meteor.Error('insufficient privileges');
                 }
 
                 var character = CharacterService.getCharacterByName(charName);

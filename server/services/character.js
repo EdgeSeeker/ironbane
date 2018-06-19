@@ -108,7 +108,7 @@ angular
                     initialRotation = [0, 0, 0];
 
                 if ($activeWorlds[startLevel]) {
-                    // if not we have a problem!
+                    // if not exist, we have a problem!
                     var spawns = $activeWorlds[startLevel].getEntities('spawnPoint');
                     if (spawns.length === 0) {
                         $log.log(startLevel, ' has no spawn points defined!');
