@@ -1,4 +1,4 @@
-# Ironbane MMO
+# NerdQuest MMO
 
 An open source 3D action MMO written in Javascript.
 

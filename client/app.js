@@ -114,7 +114,6 @@ angular
                 $log.debug('$stateNotFound', arguments);
             });*/
 
-
             GoogleAnalytics.setup();
             GoogleAnalytics.track();
         }
