@@ -4,8 +4,8 @@ angular
         serverAnnouncementsTimeout: 300,
         GAME_VERSION: '0.1.0 alpha',
         world: {
-            mainMenuLevel: Meteor.settings.public.useDevZone ? 'dev-zone-2' : 'ravenwood',
-            startLevel: Meteor.settings.public.useDevZone ? 'dev-zone-2' : 'ravenwood'
+            mainMenuLevel: Meteor.settings.public.useDevZone ? 'dev-zone' : 'ravenwood',
+            startLevel: Meteor.settings.public.useDevZone ? 'dev-zone' : 'ravenwood'
         },
         characterParts: {
             male: {

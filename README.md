@@ -1,6 +1,13 @@
 # NerdQuest MMO
 
-An MMO about a Nerd's daily life: Finding princesses in castles, friendly treasure hunts, slaying code dragons, squashing bugs and getting code to compile.
+An MMO adventure game about a Nerd's daily life: 
+
+* Finding princesses in castles
+* Competing in friendly treasure hunts
+* Slaying code dragons
+* Cos-playing
+* Forming guilds around geeky subjects
+* Squashing bugs and getting code to compile
 
 ## Installing and running
 
