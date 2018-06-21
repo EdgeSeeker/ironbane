@@ -227,6 +227,8 @@ angular
 
                 var charBuildData = getValue(npc, npcHeaders, 'imageData');
 
+                var name = getValue(npc, npcHeaders, 'name');
+
                 // Build a list of NPCS with all their components
                 var npcPrefab = {
                     gold: getValue(npc, npcHeaders, 'gold'),
@@ -284,6 +286,9 @@ angular
                             max: getValue(npc, npcHeaders, 'armor'),
                             value: getValue(npc, npcHeaders, 'armor')
                         },
+                        'name-mesh': {
+                            text: name
+                        },
                         armorRegen: {},
                         damageable: {},
                         globalState: {
@@ -300,8 +305,6 @@ angular
                         }
                     }
                 };
-
-                var name = getValue(npc, npcHeaders, 'name');
 
                 npcPrefabs[name] = npcPrefab;
             });

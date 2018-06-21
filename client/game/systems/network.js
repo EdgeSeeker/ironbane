@@ -91,7 +91,7 @@ angular
                         $entityCache.put('mainPlayer', builtEntity);
 
                         // Play day or night music?
-                        GlobalSound.play('atmos_day', null, 5);
+                        //GlobalSound.play('atmos_day', null, 5);
     
                         // needed somewhere on the scope for the UI, prolly doesn't *need* to be root
                         $rootScope.mainPlayer = builtEntity;
