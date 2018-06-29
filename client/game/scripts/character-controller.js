@@ -94,12 +94,13 @@ angular
                 playMap.map('rotateLeft', 'keyboard', 'Q', 'D');
                 playMap.map('rotateLeft', 'gamepad', 'XBOX360_LEFT_BUMPER', 'D');
 
-                playMap.map('rotateRight', 'keyboard', 'E', 'D');
+                //playMap.map('rotateRight', 'keyboard', 'E', 'D');
                 playMap.map('rotateRight', 'gamepad', 'XBOX360_RIGHT_BUMPER', 'D');
 
                 playMap.map('changeCamera', 'keyboard', 'C', 'P');
 
                 playMap.map('pickupItem', 'keyboard', 'F', 'P');
+                playMap.map('readSign', 'keyboard', 'E', 'P');
                 // TODO add Xbox control for changeCamera
 
                 for (var i = 1; i <= 8; i++) {
@@ -305,6 +306,7 @@ angular
                     BigMessagesService.add('Camera: ' + multiCamComponent.cameraType);
                 }
 
+                var interactionSystem = this.world.getSystem('signinteraction');
                 var inventorySystem = this.world.getSystem('inventory');
                 var inventoryComponent = this.entity.getComponent('inventory');
 
@@ -318,6 +320,13 @@ angular
                             this.world.publish('pickup:entity', this.entity, inventorySystem.closePickup);
                             inventorySystem.closePickup = null;
                         }
+                    }
+                }
+
+                if (playMap.test('readSign')) {
+                    if (interactionSystem.closeSign) {
+                        this.world.publish('sign:read', this.entity, interactionSystem.closeSign);
+                        interactionSystem.closeSign = null;
                     }
                 }
 

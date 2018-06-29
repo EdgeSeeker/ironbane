@@ -16,16 +16,16 @@ angular.module('game.ui.interactionButton', [
             controller: ['$scope', '$rootScope', function($scope, $rootScope) {
                 var ctrl = this;
 
-                var inventorySystem = $rootWorld.getSystem('interaction')
+                var interactionSystem = $rootWorld.getSystem('interaction')
 
                 $scope.$watch(function() {
-                    return inventorySystem.closePickup;
-                }, function(pickup) {
-                    if (pickup) {
-                        $scope.item = pickup.getComponent('sign').item;
+                    return interactionSystem.closeSign;
+                }, function(sign) {
+                    if (sign) {
+                        $scope.sign = sign.getComponent('sign').sign;
                     }
                     else {
-                        $scope.item = null;
+                        $scope.sign = null;
                     }
                 });
 
