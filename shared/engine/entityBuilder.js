@@ -222,7 +222,6 @@ angular
                         entity.userData = data.userData = {};
                     }
 
-
                     if (data.children !== undefined) {
                         _.each(data.children, function(child) {
                             // On the client, only load objects that do not have a prefab associated

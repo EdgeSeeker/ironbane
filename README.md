@@ -22,3 +22,30 @@ Open `http://localhost:3000/`.
 ## License
 
 This project falls under the MIT license unless explicitly stated otherwise.
+
+## Architecture
+
+### shared/EntityBuilder
+
+Prefabs are json scripts added to gameobjects in Gameworld maps
+
+Check if the prefab can be found in the spreadsheet
+These are usually NPC's and thus can only be added through the server
+
+prefabFactory = $injector.get(prefabFactoryName);
+
+if (angular.isFunction(prefabFactory)) 
+{
+  if the prefab entity is a function, then it should produce
+  the needed data
+  angular.extend(componentData, prefabFactory(originalConfigData));
+} 
+else 
+{
+ // else assume the prefab obj is just a JSON (Constant)
+ angular.extend(componentData, prefabFactory);
+}
+
+On the client, only load objects that do not have a prefab associated
+We only want to load static objects over JSON
+Objects with Prefabs are assumed to be dynamic so we defer loading them to the network stream
