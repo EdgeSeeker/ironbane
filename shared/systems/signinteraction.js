@@ -56,7 +56,7 @@ angular
                         me.readSign(entity, sign);
                     });
 
-                    world.subscribe('signinteraction:readsign', function(entity, pickup) {
+                    world.subscribe('sign:read', function(entity, pickup) {
                         var particle = EntityBuilder.build('particle', {
                             components: {
                                 particleEmitter: {
@@ -106,9 +106,9 @@ angular
                     });
                 },
                 readSign: function(entity, sign) {
-                    var inventoryComponent = entity.getComponent('signinteraction');
+                    var signComponent = entity.getComponent('signinteraction');
 
-                    if (!inventoryComponent) {
+                    if (!signComponent) {
                         return;
                     }
 
@@ -119,8 +119,6 @@ angular
                 update: function() {
 
                     var me = this;
-
-                    var invSystem = this;
 
                     if (Meteor.isClient) {
                         if (interactionSystem._interactionTimer.isExpired) {
@@ -139,12 +137,12 @@ angular
                                 signs.forEach(function(sign) {
                                     //$log.debug('pickup hunting: ', entity, pickups);
                                     if (entity.position.inRangeOf(sign.position, 1.0)) {
-                                        if (sign.getComponent('sign').item.type === 'oneline') {
-                                            me.world.publish('sign:message', entity, sign);
-                                        }
-                                        else {
+                                        //if (sign.getComponent('sign').item.type === 'oneline') {
+                                        //    me.world.publish('sign:message', entity, sign);
+                                        //}
+                                        //else {
                                             me.closeSign = sign;
-                                        }
+                                       // }
                                     }
                                 });
                             });
