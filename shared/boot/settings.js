@@ -4,7 +4,7 @@ Meteor.settings = Meteor.settings || {};
 
 Meteor.settings.public = Meteor.settings.public || {};
 
-Meteor.settings.public.useDevZone = false;
+Meteor.settings.public.useDevZone = true;
 
 Meteor.settings.server = Meteor.settings.server || {};
 
