@@ -37,6 +37,7 @@ angular.module('components', [
     'components.scene',
     'components.script',
     'components.shadow',
+    'components.signinteraction',
     'components.sound',
     'components.spawnZone',
     'components.spawnPoint',
