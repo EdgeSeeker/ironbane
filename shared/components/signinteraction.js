@@ -6,7 +6,7 @@ angular
             'use strict';
 
             $componentsProvider.register({
-                'signinteraction': {
+                'sign': {
                     sign: null
                 }
             });

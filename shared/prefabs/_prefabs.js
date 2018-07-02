@@ -11,6 +11,7 @@ angular
         'prefabs.teleportEntrance',
         'prefabs.teleportExit',
         'prefabs.bunny',
+        'prefabs.sign',
         'prefabs.spawnZone',
         'prefabs.spawnPoint',
         'prefabs.proctree',
