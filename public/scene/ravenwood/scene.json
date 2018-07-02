@@ -3137,7 +3137,7 @@
 							"loadOnClient": true,
 							"loadOnServer": true,
 							"message": "<No message>",
-							"prefab": "SignPrefab",
+							"prefab": "Sign",
 							"type": "Script"
 						}
 					}
