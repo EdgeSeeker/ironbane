@@ -78,10 +78,14 @@ angular
                             speed: 2.5,
                             maxSpeed: 10
                         });
+                        // TODO: Either fighter or wizard/witch
                         ent.addComponent('fighter', {
                             faction: 'ravenwood'
                         });
 
+                        ent.addComponent('signinteraction', {
+                            faction: 'ravenwood'
+                        });
 
                         if (Roles.userIsInRole(doc.owner, ['game-master'])) {
                             ent.addComponent('cheats');

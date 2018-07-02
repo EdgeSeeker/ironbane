@@ -25,6 +25,10 @@ This project falls under the MIT license unless explicitly stated otherwise.
 
 ## Architecture
 
+### server/services/game.js
+
+Player entity gets build in enterGame() and gets decorated in EntityBuilder.Build()
+
 ### shared/EntityBuilder
 
 Prefabs are json scripts added to gameobjects in Gameworld maps
